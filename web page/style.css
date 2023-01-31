@@ -1,0 +1,61 @@
+.button_img{
+    width: 50%;
+    height: 20%;
+}
+
+.search {
+    background-color: #42b395;
+    border-width: 10px;
+    border-color: #42b395;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.create {
+    top: 30vh;
+    left: 40%;
+    position: absolute;
+    margin: 0 auto;
+    background-color: #2d7f6c;
+    border-radius: 10px;
+    width: 100px; 
+    height: 63px;
+    box-sizing: border-box;
+    transition: all 1s;
+    border: 0.4vh solid transparent;
+}
+
+
+  
+/* Creating pseudo-class */
+.create:before, .create:after{
+    transition: all 1s;
+    content: "";
+    border: inherit;
+    position: absolute;
+    top: -0.5vh;
+    left: -0.5vh;
+    background-color: #2d7f6c;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+}
+  
+/* Align them in such a way
+that they form a hexagon */
+.create:before {
+    transform: rotate(60deg);
+}
+.create:after {
+    transform: rotate(-60deg);
+}
+
+:hover {
+    background-color: #4bd4b4;
+}
+
+
+.create:hover{
+    background-color: #4bd4b4;
+}
